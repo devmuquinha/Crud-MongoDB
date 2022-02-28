@@ -15,6 +15,8 @@ app.get('/', function (req, res){
     res.render("index");
 });
 
+app.get('/mostrarUsuarios', controllerUsuario.mostrarUsuarios);
+
 app.post('/cadastrarUsuario', controllerUsuario.cadastrarUsuario);
 
 app.listen(3000);
